@@ -21,12 +21,12 @@ Build the Container
 
 Once Successfully built
 
-    docker run -p 80:5000 banner_generator
+    docker run -p 5000:5000 banner_generator
 
 This will automatically run the server in port 80 and server should be ready to run.
 
 ## To Deploy use the command
 
-    docker run -d -p 80:5000 banner_generator --restart always
+    docker run -d -p 5000:5000 banner_generator --restart always
 
 This will run the container in detached mode and will restart to run even if system restarts.
